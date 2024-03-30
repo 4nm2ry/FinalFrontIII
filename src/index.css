@@ -12,7 +12,7 @@ code {
     monospace;
 }
 .favButton{
-  background-color: rgba(136, 136, 136, 0.116);
+  background-color: rgba(136, 136, 136, 0.233);
   padding: 10px;
   border: none;
   width: 100%;
@@ -37,10 +37,11 @@ a{
   cursor: pointer;
 }
 a:hover{
-  color: rgb(136, 136, 136);
+  color: rgba(136, 136, 136, 0.904);
 } 
 
 footer {
+  background-color: rgb(165, 164, 164);
   display: flex;
   justify-content: center;
   text-align: center;
@@ -77,11 +78,11 @@ form{
   align-items: center;
   width: 200px;
   padding: 0.5rem 0.5rem 0 0.5rem;
-  border: 0.5px solid rgb(136, 136, 136);
+  border: 0.5px solid rgba(136, 136, 136, 0.89);
 }
 
 .card:hover{
-  border: 0.5px solid rgb(206, 217, 142);
+  border: 0.5px solid rgba(206, 217, 142, 0.877);
 }
 
 .card-grid{
@@ -119,4 +120,71 @@ tr:nth-child(even) {
 }
 .dark > a {
   color: white;
+}
+
+header {
+  background-color:#77B1D9;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  z-index: 1;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 80vw;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+}
+
+header h1 span {
+  color: rgb(200, 0, 0); 
+}
+
+
+.dark header {
+  background-color: rgb(
+    4,
+    13,
+    18
+  ); 
+}
+
+.dark header h1 span {
+  color: rgb(236, 47, 47); 
+}
+
+nav a {
+  padding-block: 5px;
+}
+
+nav a.active {
+  font-weight: bold;
+  pointer-events: none;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 21px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.dark header a {
+  color: #e5e7eb; 
+}
+
+.card-img{
+  width: 100%;
 }
